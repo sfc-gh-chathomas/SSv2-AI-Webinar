@@ -232,7 +232,7 @@ from snowflake.ingest.streaming import StreamingIngestClient
 
 fake = Faker()
 
-# --- Configuration (auto-populated by Coco) ---
+# --- Configuration (auto-populated by Cortex Code) ---
 BATCH_SIZE = 5
 DEMO_MINUTES = 30  # Runs in background for the full webinar
 NUM_BATCHES = DEMO_MINUTES * 120  # 120 batches per minute (5 rows every 0.5s)
@@ -792,4 +792,7 @@ CREATE OR REPLACE TABLE {{DATABASE}}.{{SCHEMA}}.{{TABLE_NAME}} (
 
 ### Default pipe reference
 
-No `CREAT                                                                     
+No `CREATE PIPE` needed. The SDK references:
+```
+{{TABLE_NAME}}-streaming
+```

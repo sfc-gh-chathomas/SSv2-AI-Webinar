@@ -326,7 +326,7 @@ from snowflake.ingest.streaming import StreamingIngestClient
 
 fake = Faker()
 
-# --- Configuration (auto-populated by Coco) ---
+# --- Configuration (auto-populated by Cortex Code) ---
 BATCH_SIZE = 5
 DEMO_MINUTES = <DEMO_MINUTES>  # User-specified duration (1-10 minutes)
 NUM_BATCHES = DEMO_MINUTES * 120  # 120 batches per minute (5 rows every 0.5s)
