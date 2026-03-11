@@ -3,6 +3,8 @@ name: ssv2-quickstart
 description: "Automated quick-start for Snowpipe Streaming V2 (high-performance architecture). Detects your OS (macOS/Linux/Windows), verifies Python, sets up a virtual environment, creates a landing table, configures RSA key-pair auth, streams fake user data via the default auto-created pipe, and deploys a real-time Streamlit in Snowflake dashboard so you can watch rows arrive live. Triggers: ssv2 quickstart, snowpipe streaming quickstart, snowpipe streaming demo, demo snowpipe streaming, try snowpipe streaming."
 ---
 
+<!-- Copyright (c) 2026 Snowflake Inc. Licensed under Apache 2.0. See LICENSE. -->
+
 ## When to use
 
 Use this skill when the user wants to:

@@ -3,6 +3,8 @@ name: ssv2-AI-webinar
 description: "End-to-end SSv2 + AI demo for webinars. Sets up Snowpipe Streaming V2 with background data generation, deploys a live Streamlit dashboard, then layers on a Semantic View and Cortex Agent so the presenter can do natural-language queries on live-streaming data in Snowsight. Triggers: ssv2 ai webinar, ssv2 webinar demo, ssv2 ai demo, streaming ai demo, snowpipe streaming webinar, ssv2 cortex agent demo, ssv2 semantic view demo."
 ---
 
+<!-- Copyright (c) 2026 Snowflake Inc. Licensed under Apache 2.0. See LICENSE. -->
+
 ## When to use
 
 Use this skill when the user wants to:

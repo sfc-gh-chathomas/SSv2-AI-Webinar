@@ -1,5 +1,7 @@
 # Snowpipe Streaming V2 -- Cortex Code Skills
 
+> **Disclaimer:** This is a community demo project by a Snowflake employee, **not** an officially supported Snowflake product or service. It is provided "as-is" for demonstration and educational purposes only. No warranty is expressed or implied. For production streaming ingestion, refer to the official [Snowpipe Streaming documentation](https://docs.snowflake.com/en/user-guide/snowpipe-streaming/snowpipe-streaming-high-performance-overview).
+
 Two [Cortex Code](https://docs.snowflake.com/en/user-guide/cortex-code/cortex-code) skills that automate end-to-end Snowpipe Streaming V2 demos. Say the trigger phrase in Cortex Code and the skill handles everything -- from RSA key generation to live dashboards.
 
 ## Skills
@@ -38,6 +40,8 @@ Everything in the quickstart, **plus** an AI layer for live presentations:
 - Python 3.9+
 - OpenSSL (for RSA key generation)
 - A Snowflake account with ACCOUNTADMIN or SYSADMIN + USERADMIN privileges
+
+> **Security Notice:** These skills are designed for **short-lived demos only**. They generate unencrypted RSA private keys and create temporary Snowflake users with elevated privileges. **Do not use this pattern in production.** For production deployments, use encrypted keys with a passphrase or a secrets manager, and follow the principle of least privilege. All demo objects (users, roles, keys) are cleaned up automatically at the end of the demo.
 
 ### Install the skills
 
@@ -140,3 +144,11 @@ Local machine                          Snowflake Cloud
 - [Python SDK on PyPI](https://pypi.org/project/snowpipe-streaming/)
 - [Cortex Code Documentation](https://docs.snowflake.com/en/user-guide/cortex-code/cortex-code)
 - [Cortex Code Skills Guide](https://docs.snowflake.com/en/user-guide/cortex-code/cortex-code-skills)
+
+## License
+
+Licensed under the Apache License, Version 2.0. See [LICENSE](LICENSE) for details.
+
+## Trademarks
+
+Snowflake, Snowpipe, Snowpipe Streaming, Snowsight, Cortex, and Streamlit are trademarks or registered trademarks of Snowflake Inc. All other trademarks are the property of their respective owners. Use of these trademarks does not imply endorsement.
